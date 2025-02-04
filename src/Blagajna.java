@@ -52,11 +52,11 @@ public class Blagajna {
 
         while (true) {
             String vrijednost = unos.nextLine();
-            if(vrijednost.equalsIgnoreCase("kraj")) {
+            if(vrijednost.equalsIgnoreCase("kraj")) { //Ako je unesena riječ 'kraj' izlazimo iz while-a
                 break;
             }
 
-            try {
+            try { //Ukoliko korisnik unese krivu vrijednost tj. ne unese niti cijeli broj, niti riječ 'kraj'
                 int broj = Integer.parseInt(vrijednost);
                 brojevi.add(broj);
             } catch (NumberFormatException e) {
@@ -66,22 +66,22 @@ public class Blagajna {
             System.out.print("Unesite broj ili riječ 'kraj': ");
         }
 
-        if (brojevi.isEmpty()) {
+        if (brojevi.isEmpty()) { //Provjeravamo je li lista ima elemente
             System.out.println("U listi nema brojeva!");
-            return;
-        } else {
+            return; //Završavamo program pošto je lista prazna
+        } else { //ako ima ispisujemo listu
             System.out.println("Lista brojeva: " + brojevi);
         }
 
-        int max = brojevi.get(0);
-        int min = brojevi.get(0);
+        int max = brojevi.get(0); //Dohvaćamo 1. element liste, jer pretpostavljamo da će prvi unesen broj biti najveći
+        int min = brojevi.get(0); //Dohvaćamo 1. element liste, jer pretpostavljamo da će prvi unesen broj biti najmanji
 
-        for (int broj : brojevi) {
+        for (int broj : brojevi) {  //Prolazimo kroz listu, te provjeravamo vrijednosti
             if (broj > max) {
-                max = broj;
+                max = broj; //ako je broj iz liste veći od max, onda je vrijednost broja jednaka max-u
             }
             if (broj < min) {
-                min = broj;
+                min = broj; //ako je broj iz liste manji od min, onda je vrijednost broja jednaka min-u
             }
         }
 
