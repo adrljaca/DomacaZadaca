@@ -24,6 +24,8 @@ public class Characters {
         int slova = 0;
         int znakovi = 0;
 
+        char[] znakoviPolje = {'.',',','?','!','+','-','"','/','|','*',':','&','='};
+
         for (int i = 0; i < unos.length(); i++) {
             char c = unos.charAt(i);
 
@@ -31,8 +33,12 @@ public class Characters {
                 slova++;
             } else if (Character.isDigit(c)) {
                 brojevi++;
-            } else if (c == '.' || c == ',' || c == '?' || c == '"' || c == '!' || c == '-') {
-                znakovi++;
+            } else {
+                for (char z : znakoviPolje) {
+                    if (c == z) {
+                        znakovi++;
+                    }
+                }
             }
         }
 
