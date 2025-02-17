@@ -35,6 +35,12 @@ public class Main {
             proizvodi.add(proizvod);
         }
 
+        //Ukoliko nema proizvoda u listi
+        if (proizvodi.isEmpty()) {
+            System.out.println("Nije unesen niti jedan proizvod u listu!");
+            return;
+        }
+
         //Ispisujemo proizvode
         System.out.println("\n-----Ispis proizvoda-----");
         for (Proizvod proizvod : proizvodi) {
