@@ -9,8 +9,8 @@ package Zivotinja;
 
 public class Glasanje {
     public static void main(String[] args) {
-        Zivotinja pas = new Pas("Tony");
-        Zivotinja macka = new Macka("Lilly");
+        Zivotinja pas = new Pas("Lassie");
+        Zivotinja macka = new Macka("Garfield");
         Zivotinja zaba = new Zaba("Kermit");
         Zivotinja krava = new Krava("Milka");
         Zivotinja ovca = new Ovca("Dolly");
