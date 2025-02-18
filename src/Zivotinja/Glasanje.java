@@ -9,6 +9,12 @@ package Zivotinja;
 
 public class Glasanje {
     public static void main(String[] args) {
+
+        //Test
+        Zivotinja zivotinja = new Zivotinja("životinja");
+        System.out.println("Naziv (" + zivotinja.naziv + ") se glasa: " + "Glasanje (" + zivotinja.glasajSe() + ")\n");
+
+        //Primjeri
         Zivotinja pas = new Pas("Lassie");
         Zivotinja macka = new Macka("Garfield");
         Zivotinja zaba = new Zaba("Kermit");

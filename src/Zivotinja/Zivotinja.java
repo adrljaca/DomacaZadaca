@@ -68,6 +68,7 @@ class Ovca extends Zivotinja {
         super(naziv);
     }
 
+    @Override
     public String glasajSe() {
         return "Bee Bee";
     }
