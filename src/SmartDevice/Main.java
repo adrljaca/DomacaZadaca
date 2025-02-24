@@ -32,11 +32,22 @@ public class Main {
         zvucnik.performAction();
         zvucnik.displayStatus();
         zvucnik.remoteControl("Play");
+        zvucnik.remoteControl("volume 85");
         zvucnik.performAction();
         zvucnik.displayStatus();
         zvucnik.remoteControl("Stop");
         zvucnik.performAction();
         zvucnik.displayStatus();
         zvucnik.updateFirmware("2.0");
+
+        //Filter
+        SmartAirFilter filter = new SmartAirFilter("1.0", false);
+        System.out.println("\n-------------Filter-------------");
+        filter.performAction();
+        filter.displayStatus();
+        filter.remoteControl("Start");
+        filter.performAction();
+        filter.displayStatus();
+        filter.remoteControl("Stop");
     }
 }
