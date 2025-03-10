@@ -19,7 +19,7 @@ public class Kopiraj {
             //Pokrećemo metodu kopirajDatoteku();
             kopirajDatoteku(original, kopija);
 
-            //While radi dok korisnik ne unesemo D ili N
+            //While radi dok korisnik ne unese D ili N
             while (true) {
                 System.out.print("Želite li izbrisati kopiju datoteke (D/N)? ");
                 String obrisati = read.readLine();
@@ -34,6 +34,8 @@ public class Kopiraj {
                 } else if ("N".equalsIgnoreCase(obrisati)) {
                     System.out.println("Program dovršen!");
                     break;
+                } else {
+                    System.out.println("Pogrešan unos!");
                 }
             }
 
