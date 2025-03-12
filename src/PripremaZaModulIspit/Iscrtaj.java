@@ -16,7 +16,7 @@ public class Iscrtaj {
                 }
             } else {
                 for (int j = 0; j < y; j++) {
-                    System.out.print("-");
+                    System.out.print("°");
                 }
             }
             System.out.println();

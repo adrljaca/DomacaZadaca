@@ -34,7 +34,6 @@ public class Polaznik implements Comparable<Polaznik> {
 class Main {
     public static void main(String[] args) {
         List<Polaznik> polaznici = new ArrayList<>();
-        
         polaznici.add(new Polaznik(30, "Ivo", "Ivić"));
         polaznici.add(new Polaznik(37, "Pero", "Perić"));
         polaznici.add(new Polaznik(23, "Ana", "Anić"));
