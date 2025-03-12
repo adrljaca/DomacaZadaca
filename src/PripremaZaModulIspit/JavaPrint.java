@@ -1,3 +1,5 @@
+//1.Zadatak - Napišite Java program koji ispisuje na standardni izlaz sljedeće: JAVA
+
 package PripremaZaModulIspit;
 
 public class JavaPrint {

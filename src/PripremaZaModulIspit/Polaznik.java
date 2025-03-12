@@ -1,3 +1,8 @@
+//3.Zadatak - Napravite klasu Polaznik sa sljedećim svojstvima: dob, ime, prezime.
+//Tipove podataka odaberite sami. Klasa ne smije prema van izlagati varijable, već ih
+//mora čuvatio kao privatne članove. U glavnom programu napravite 3 polaznika različite starosti,
+//dodajte ih u kolekciju i sortirajte po godinama uzlazno, zatim ispišite.
+
 package PripremaZaModulIspit;
 
 import java.util.ArrayList;

@@ -1,3 +1,6 @@
+//2.Zadatak - Napišite program koji iz metode main poziva metodu iscrtaj(x,y),
+//gdje su x i y brojevi redaka i stupaca koje je potrebno ispisati na standardni izlaz.
+
 package PripremaZaModulIspit;
 
 public class Iscrtaj {
