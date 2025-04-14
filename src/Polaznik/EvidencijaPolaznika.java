@@ -71,5 +71,6 @@ public class EvidencijaPolaznika {
                 System.out.println("Nepoznata opcija! Pokušajte ponovo.\n");
             }
         }
+        scanner.close();
     }
 }
