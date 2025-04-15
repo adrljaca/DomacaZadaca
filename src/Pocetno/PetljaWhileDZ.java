@@ -1,4 +1,4 @@
-//DZ 27-01-2025
+package Pocetno;//DZ 27-01-2025
 
 import java.util.Scanner;
 

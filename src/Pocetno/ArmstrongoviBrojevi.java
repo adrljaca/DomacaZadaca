@@ -1,4 +1,4 @@
-//DZ 29-01-2025
+package Pocetno;//DZ 29-01-2025
 
 //Napišite program koji ispisuje sve Armstrongove brojeve manje od 10000.
 //Armstrongovi brojevi su brojevi koji su jednaki sumi kubova svojih znamenaka.

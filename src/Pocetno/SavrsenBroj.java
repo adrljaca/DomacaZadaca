@@ -1,4 +1,4 @@
-//DZ 30-01-2025
+package Pocetno;//DZ 30-01-2025
 
 //Zadatak 1: Napišite program koji ispisuje je li uneseni broj savršen ili ne.
 // Savršen broj je broj koji je jednak zbroju svojih djelitelja (bez njega samoga). Npr. 6 (1 + 2 + 3 = 6)

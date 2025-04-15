@@ -1,4 +1,4 @@
-//DZ 10-02-2025
+package Pocetno;//DZ 10-02-2025
 
 //Uzeti bilo koja dva zadataka iz prethodnih zadaća i preoblikovati rješenje da se koriste metode.
 
@@ -41,7 +41,7 @@ public class Metode {
     }
 
 
-    //2. Zadatak - Blagajna - program koji učitava iznos u eurima koji prodavačica treba uzvratiti klijentu.
+    //2. Zadatak - Pocetno.Blagajna - program koji učitava iznos u eurima koji prodavačica treba uzvratiti klijentu.
     public static void Blagajna (double iznos) {
         double[] euri = {500.00, 200.00, 100.00, 50.00, 20.00, 10.00, 5.00,
                 2.00, 1.00, 0.50, 0.20, 0.10, 0.05, 0.02, 0.01};

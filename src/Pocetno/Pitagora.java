@@ -1,4 +1,4 @@
-//DZ 22-01-2025
+package Pocetno;//DZ 22-01-2025
 import java.util.Scanner;
 
 public class Pitagora {

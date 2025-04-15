@@ -20,57 +20,62 @@ public class EvidencijaPolaznika {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Izbornik:");
-            System.out.println("1. Dodavanje novog polaznika");
-            System.out.println("2. Ispis svih polaznika");
-            System.out.println("3. Pretraga polaznika po e-mailu");
-            System.out.println("4. Izlaz iz izbornika");
+            System.out.println("\n|-------------Izbornik-------------|");
+            System.out.println("\t1.Dodavanje novog polaznika");
+            System.out.println("\t2.Ispis svih polaznika");
+            System.out.println("\t3.Pretraga polaznika po e-mailu");
+            System.out.println("\t4.Izlaz iz izbornika");
+            System.out.println("|----------------------------------|");
 
-            System.out.print("Unesite opciju:");
+            System.out.print("Unesite opciju: ");
             int opcija = scanner.nextInt();
             scanner.nextLine();
 
-            if (opcija == 1) {
-                System.out.print("Unesite ime: ");
-                String ime = scanner.nextLine();
-                System.out.print("Unesite prezime: ");
-                String prezime = scanner.nextLine();
-                System.out.print("Unesite e-mail: ");
-                String email = scanner.nextLine();
+            switch (opcija) {
+                case 1:
+                    System.out.print("Unesite ime: ");
+                    String ime = scanner.nextLine();
+                    System.out.print("Unesite prezime: ");
+                    String prezime = scanner.nextLine();
+                    System.out.print("Unesite e-mail: ");
+                    String email = scanner.nextLine();
 
-                listaPolaznika.add(new Polaznik(ime, prezime, email));
-                System.out.println("Polaznik dodan u listu!");
-            } else if (opcija == 2) {
-                System.out.println("\n-----List polaznika-----");
-                if (listaPolaznika.isEmpty()) {
-                    System.out.println("Nema polaznika u listi!");
-                } else {
+                    listaPolaznika.add(new Polaznik(ime, prezime, email));
+                    System.out.println("Polaznik dodan u listu.\n");
+                    break;
+                case 2:
+                    System.out.println("\n|----------Lista Polaznika----------|");
+                    if (listaPolaznika.isEmpty()) {
+                        System.out.println("\t   Nema polaznika u listi!");
+                    } else {
+                        for (Polaznik p : listaPolaznika) {
+                            System.out.println("\t" + p);
+                        }
+                    }
+                    break;
+                case 3:
+                    System.out.print("Unesite e-mail adresu polaznika: ");
+                    String pretraga = scanner.nextLine();
+                    boolean pronaden = false;
+
                     for (Polaznik p : listaPolaznika) {
-                        System.out.println(p);
+                        if (p.getEmail().equalsIgnoreCase(pretraga)) {
+                            System.out.println("Pronađen polaznik " + p + "\n");
+                            pronaden = true;
+                        }
                     }
-                }
-            } else if (opcija == 3) {
-                System.out.print("Unesite e-mail adresu polaznika: ");
-                String pretraga = scanner.nextLine();
-                boolean pronaden = false;
 
-                for (Polaznik p : listaPolaznika) {
-                    if (p.getEmail().equalsIgnoreCase(pretraga)) {
-                        System.out.println("Polaznik: " + p + "\n");
-                        pronaden = true;
+                    if (!pronaden) {
+                        System.out.println("Ne postoji polaznik sa navedenim e-mailom.");
                     }
-                }
-
-                if (!pronaden) {
-                    System.out.println("Polaznik s tim e-mailom ne postoji!\n");
-                }
-            } else if (opcija == 4) {
-                System.out.println("Izlaz iz programa.\n");
-                break;
-            } else {
-                System.out.println("Nepoznata opcija! Pokušajte ponovo.\n");
+                    break;
+                case 4:
+                    System.out.println("Izlaz iz programa!");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Nepoznata opcija. Pokušajte ponovo!");
             }
         }
-        scanner.close();
     }
 }
