@@ -11,20 +11,12 @@ public class Polaznik {
         this.email = email;
     }
 
-    public String getIme() {
-        return ime;
-    }
-
-    public String getPrezime() {
-        return prezime;
-    }
-
     public String getEmail() {
         return email;
     }
 
     @Override
     public String toString() {
-        return ime + " " + prezime + " (" + email + ")";
+        return ime + " " + prezime + " " + "("+ email + ")";
     }
 }
