@@ -51,9 +51,14 @@ public class EvidencijaPolaznika {
             }
         }
 
-        System.out.println("\nLista svih polaznika");
-        for (Polaznik p : polaznici.values()) {
-            System.out.println(p);
+        //Ispis polaznika ako ih ima
+        if (polaznici.isEmpty()) {
+            System.out.println("Nema dodanih polaznika!");
+        } else {
+            System.out.println("\nLista svih polaznika");
+            for (Polaznik p : polaznici.values()) {
+                System.out.println(p);
+            }
         }
 
         scan.close();
