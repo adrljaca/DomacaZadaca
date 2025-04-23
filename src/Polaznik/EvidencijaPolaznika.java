@@ -14,12 +14,13 @@ Program treba omogućiti unos polaznika i njihovih podataka te provjeriti jesu l
 
 package Polaznik;
 
-import java.util.HashMap;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class EvidencijaPolaznika {
     public static void main(String[] args) {
-        HashMap<String, Polaznik> polaznici = new HashMap<>();
+        //HashMap<String, Polaznik> polaznici = new HashMap<>();
+        TreeMap<String, Polaznik> polaznici = new TreeMap<>();
         Scanner scan = new Scanner(System.in);
         boolean radi = true;
 
